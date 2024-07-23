@@ -1,0 +1,31 @@
+import re 
+    
+def if_has_special_char(s):
+
+    special_char=re.compile(r"[@_!#$%^&*()<>?/\\|}{~:]")
+
+    if re.search(special_char,s):
+        return True
+    else:
+        return False
+
+
+string=input("Enter a string: ")
+if(len(string)>20):
+    print("Invalid String")
+elif string.isnumeric():
+    print(f"{string} is valid")    
+elif(if_has_special_char(string)):
+    print(f"{string} is valid")
+else:
+    print("Invalid string")
+
+
+
+    
+
+
+    
+
+    
+   
