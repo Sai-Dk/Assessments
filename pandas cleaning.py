@@ -4,5 +4,4 @@ file_path = 'data.csv'
 df=pd.read_csv("data.csv")
 x = df["Calories"].mode()[0]
 print(x)
-New_df=df.fillna(x)
-print(df.duplicated())
+
